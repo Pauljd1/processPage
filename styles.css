@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: #FFFFFF;
+}
+
+.header-image {
+    width: 100%;
+}
+
+.complete-site {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    position: relative;
+    max-width: 960px;
+}
+
+.our-process {
+    color: #6B59D0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.main-headline {
+    color: #374151;
+    font-size: 3rem;
+    font-weight: 700;
+    width: 80%;
+    margin-bottom: 2.5rem;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    align-items: start;
+}
+
+.box {
+    position: relative;
+}
+
+.box-headline {
+    font-size: 1.5rem;
+    color: #374151;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1.8rem;
+}
+
+.box-p {
+    color: #6B7280;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    width: 80%;
+}
+
+.purple-p {
+    color: #6B59D0;
+}
+
+
+.dotted-line {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -3%;
+    width: 0;
+    border-left: 2px dotted #DEDDEB;
+    height: 100%;
+}
+
+.dotted-line-2, .dotted-line-3, .dotted-line-4 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    width: 0;
+    border-left: 2px dotted #DEDDEB;
+    height: 100%;
+    visibility: hidden;
+}
+.purple-line {
+    position: absolute;
+    left: -15px;
+    top: 85px;
+    width: 2px;
+    height: 30px;
+    background-color: #6B59D0;
+}
+
+
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .dotted-line {
+        left: 47%;
+        transform: translateX(-50%);
+    }
+
+    .dotted-line-2{
+        visibility: visible;
+        left: -1.9%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 6rem;
+        width:100%
+    }
+
+    .dotted-line {
+        left: 27.6%;
+        transform: translateX(-50%);
+    }
+
+    .dotted-line-2{
+        visibility: visible;
+        left: -1.5%;
+        transform: translateX(-50%);
+    }
+
+    .dotted-line-3{
+        visibility: visible;
+        left: 57.2%;
+        transform: translateX(-50%);
+    }
+
+    .dotted-line-4{
+        visibility: visible;
+        left: 83.7%;
+        transform: translateX(-50%);
+    }
+}
+
