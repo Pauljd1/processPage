@@ -10,7 +10,7 @@ This is a solution for the [Process Page Master](https://devchallenges.io/challe
 
 You can view the live demo and solution using the links below:
 
-- [Live Demo](#)
+- [Live Demo](https://processpage1.netlify.app/)
 - [Challenge](https://devchallenges.io/challenge/process-page)
 
 ## What I Learned
